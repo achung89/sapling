@@ -28,7 +28,7 @@
     "textmate": "node ./textmate.js"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/cli": "^2.16.5",
     "@graphql-codegen/typescript": "^2.4.8",
     "@graphql-codegen/typescript-document-nodes": "^2.2.8",
     "@graphql-codegen/typescript-operations": "^2.3.5",

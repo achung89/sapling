@@ -13,5 +13,5 @@
 
 const child_process = require('child_process');
 
-child_process.execSync('yarn run graphql');
-child_process.execSync('yarn run textmate');
+child_process.execSync('npm run graphql', {stdio: 'inherit'});
+child_process.execSync('npm run textmate', {stdio: 'inherit'});

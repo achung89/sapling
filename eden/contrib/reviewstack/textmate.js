@@ -43,8 +43,8 @@ function mkdir_p(path) {
 // Clear out the previous build of the textmate module.
 rm_rf(`${textmateModule}/dist`);
 // Rebuild the textmate module.
-child_process.execSync('yarn', {cwd: textmateModule});
-child_process.execSync('yarn run tsc', {cwd: textmateModule});
+child_process.execSync('npm install', {cwd: textmateModule, stdio: 'inherit'});
+child_process.execSync('npx tsc', {cwd: textmateModule, stdio: 'inherit'});
 
 const manifestFolder = 'src/generated/textmate';
 rm_rf(manifestFolder);

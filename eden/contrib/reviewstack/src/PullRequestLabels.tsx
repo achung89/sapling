@@ -99,6 +99,7 @@ export default function PullRequestLabels(): React.ReactElement {
       {label}
       <Box display="flex" flexWrap="wrap" gridGap={1}>
         {pullRequestLabels.map(({id, name, color}) => (
+          // @ts-expect-error lol
           <IssueLabelToken
             key={id}
             text={name}

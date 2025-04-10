@@ -177,6 +177,7 @@ function PullsList({onClickLabelToken, pullRequests}: PullsListProps): React.Rea
                 <Text>{title}</Text>
               </PullRequestLink>
               {(labels?.nodes ?? []).filter(notEmpty).map(({id, name, color}) => (
+                // @ts-expect-error lol
                 <IssueLabelToken
                   key={id}
                   text={name}

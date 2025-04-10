@@ -130,6 +130,7 @@ export default function PullRequestReviewers(): React.ReactElement {
       {label}
       <Box display="flex" flexWrap="wrap" gridGap={1}>
         {pullRequestReviewers.reviewers.map(user => (
+          // @ts-expect-error lol
           <AvatarToken
             key={user.id}
             avatarSrc={user.avatarUrl}
